@@ -23,7 +23,7 @@ public class DialogeManager : MonoBehaviour
         dialogue.Clear();
         dialogueUi.SetActive(true);
 
-        player.GetComponent<PlayerMovement_2D>().enabled = false;
+       // player.GetComponent<PlayerMovement_2D>().enabled = false;
         player.GetComponent<PlayerInteraction>().enabled = false;
 
         animator.SetFloat("Speed", 0);
@@ -52,7 +52,7 @@ public class DialogeManager : MonoBehaviour
     {
         dialogueUi.SetActive(false);
 
-        player.GetComponent<PlayerMovement_2D>().enabled = true;
+      //  player.GetComponent<PlayerMovement_2D>().enabled = true;
         player.GetComponent<PlayerInteraction>().enabled = true;
     }
 }

@@ -68,10 +68,10 @@ GameObject:
   - component: {fileID: 2293349409630800480}
   - component: {fileID: 2293349409630800486}
   - component: {fileID: 2293349409630800487}
-  - component: {fileID: 1012317712099545457}
+  - component: {fileID: 3196360463791931261}
   m_Layer: 0
   m_Name: Coin
-  m_TagString: Untagged
+  m_TagString: InterObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -161,7 +161,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1012317712099545457
+--- !u!114 &3196360463791931261
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -170,7 +170,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 2293349409630800481}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 29ddaad37a2d97648ad0418de552a4b5, type: 3}
+  m_Script: {fileID: 11500000, guid: 09f407699e6e9124b9c8b285c3f6694c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialogeManager: {fileID: 0}
   interType: 2
+  infoMessage: 
+  dialogueName: 
+  sentances: []
