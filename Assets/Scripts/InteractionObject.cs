@@ -24,7 +24,10 @@ public class InteractionObject : MonoBehaviour
     [Header("Dialogue Messages")]
     public string dialogueName;
     [TextArea]
+    public int objectiveCount;
+    public int completedObj;
     public string[] sentances;
+    public string[] sentances2;
 
 
     public void Start()
