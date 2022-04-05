@@ -6,12 +6,14 @@ using UnityEngine.UI;
 public class InteractionObject : MonoBehaviour
 {
     public DialogeManager dialogeManager;
+    public ItemManager itemManager;
 
     public enum  InteractableType
     {
         nothing,
         info,
-        pickup,
+        pickupCoin,
+        pickupGem,
         dialoge
     }
     [Header("Type of Interactable")]
@@ -24,10 +26,15 @@ public class InteractionObject : MonoBehaviour
     [Header("Dialogue Messages")]
     public string dialogueName;
     [TextArea]
-    public int objectiveCount;
-    public int completedObj;
+
     public string[] sentances;
     public string[] sentances2;
+
+    [Header("Quest Requirements")]
+    public int coinRequirement;
+    public int gemReqirement;
+    public int questNumber;
+
 
 
     public void Start()
@@ -50,6 +57,7 @@ public class InteractionObject : MonoBehaviour
     }
     public void Dialouge()
     {
+        if (que)
         dialogeManager.StartDialogue(sentances);
     }
 

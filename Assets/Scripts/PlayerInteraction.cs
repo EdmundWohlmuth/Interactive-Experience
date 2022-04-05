@@ -6,6 +6,7 @@ public class PlayerInteraction : MonoBehaviour
 {
     public GameObject currentInterObj = null;
     public InteractionObject currentInteractObjScript = null;
+    public ItemManager itemManager;
 
 
     void Update()
@@ -29,9 +30,15 @@ public class PlayerInteraction : MonoBehaviour
         {
             currentInteractObjScript.Info();
         }
-        else if (currentInteractObjScript.interType == InteractionObject.InteractableType.pickup)
+        else if (currentInteractObjScript.interType == InteractionObject.InteractableType.pickupCoin)
         {
             currentInteractObjScript.Pickup();
+            itemManager.coinCount++;
+        }
+        else if (currentInteractObjScript.interType == InteractionObject.InteractableType.pickupGem)
+        {
+            currentInteractObjScript.Pickup();
+            itemManager.gemCount++;
         }
         else if (currentInteractObjScript.interType == InteractionObject.InteractableType.dialoge)
         {
