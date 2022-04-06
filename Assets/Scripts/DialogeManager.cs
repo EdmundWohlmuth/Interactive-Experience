@@ -11,14 +11,16 @@ public class DialogeManager : MonoBehaviour
     public Animator animator;
 
     private Queue<string> dialogue;
+    bool spokenToo;
 
     // Start is called before the first frame update
     void Start()
     {
         dialogue = new Queue<string>();
+        spokenToo = false;
     }
 
-    public void StartDialogue(string[] sentances)
+    public void StartDialogue(string[] sentances, string[] sentances2)
     {
         dialogue.Clear();
         dialogueUi.SetActive(true);
@@ -29,11 +31,23 @@ public class DialogeManager : MonoBehaviour
         animator.SetFloat("Speed", 0);
         player.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
 
-        foreach (var currentLine in sentances)
+        if (!spokenToo)
         {
-            dialogue.Enqueue(currentLine);           
+            foreach (var currentLine in sentances)
+            {
+                dialogue.Enqueue(currentLine);
+                spokenToo = true;
+            }           
+        }
+        else if (spokenToo)
+        {
+            foreach (var currentLine in sentances2)
+            {
+                dialogue.Enqueue(currentLine);
+            }
         }
         DisplayNextSentance();
+
     }
 
     public void DisplayNextSentance()

@@ -57,8 +57,7 @@ public class InteractionObject : MonoBehaviour
     }
     public void Dialouge()
     {
-        if (que)
-        dialogeManager.StartDialogue(sentances);
+        dialogeManager.StartDialogue(sentances, sentances2);
     }
 
     IEnumerator ShowInfo(string infoMessage, float waitTime)

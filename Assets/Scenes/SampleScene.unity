@@ -22226,6 +22226,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 633074412}
     m_Modifications:
     - target: {fileID: 4780116304775977826, guid: 20ba440f45df5884a9d45189852849cc, type: 3}
+      propertyPath: interType
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4780116304775977826, guid: 20ba440f45df5884a9d45189852849cc, type: 3}
       propertyPath: dialogeManager
       value: 
       objectReference: {fileID: 1393596620}
@@ -23230,6 +23234,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 633074412}
     m_Modifications:
+    - target: {fileID: 4780116304775977826, guid: 20ba440f45df5884a9d45189852849cc, type: 3}
+      propertyPath: interType
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 4780116304775977826, guid: 20ba440f45df5884a9d45189852849cc, type: 3}
       propertyPath: dialogeManager
       value: 
@@ -24795,7 +24803,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 10
+    m_FontSize: 16
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
@@ -25432,6 +25440,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 633074412}
     m_Modifications:
+    - target: {fileID: 4780116304775977826, guid: 20ba440f45df5884a9d45189852849cc, type: 3}
+      propertyPath: interType
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 4780116304775977826, guid: 20ba440f45df5884a9d45189852849cc, type: 3}
       propertyPath: dialogeManager
       value: 
@@ -63723,12 +63735,16 @@ PrefabInstance:
     m_TransformParent: {fileID: 633074412}
     m_Modifications:
     - target: {fileID: 4780116304775977826, guid: 20ba440f45df5884a9d45189852849cc, type: 3}
+      propertyPath: interType
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4780116304775977826, guid: 20ba440f45df5884a9d45189852849cc, type: 3}
       propertyPath: dialogeManager
       value: 
       objectReference: {fileID: 1393596620}
     - target: {fileID: 4780116304775977826, guid: 20ba440f45df5884a9d45189852849cc, type: 3}
       propertyPath: sentances2.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4780116304775977826, guid: 20ba440f45df5884a9d45189852849cc, type: 3}
       propertyPath: sentances.Array.data[1]
@@ -63736,7 +63752,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4780116304775977826, guid: 20ba440f45df5884a9d45189852849cc, type: 3}
       propertyPath: sentances2.Array.data[0]
-      value: Ho, Hoo, I've got new dialogue
+      value: Did you get my 2 coins?
+      objectReference: {fileID: 0}
+    - target: {fileID: 4780116304775977826, guid: 20ba440f45df5884a9d45189852849cc, type: 3}
+      propertyPath: sentances2.Array.data[1]
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 4780116304775977836, guid: 20ba440f45df5884a9d45189852849cc, type: 3}
       propertyPath: m_RootOrder
