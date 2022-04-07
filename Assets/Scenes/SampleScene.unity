@@ -22230,11 +22230,23 @@ PrefabInstance:
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4780116304775977826, guid: 20ba440f45df5884a9d45189852849cc, type: 3}
+      propertyPath: itemManager
+      value: 
+      objectReference: {fileID: 1393596621}
+    - target: {fileID: 4780116304775977826, guid: 20ba440f45df5884a9d45189852849cc, type: 3}
+      propertyPath: RequirementNum
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 4780116304775977826, guid: 20ba440f45df5884a9d45189852849cc, type: 3}
       propertyPath: dialogeManager
       value: 
       objectReference: {fileID: 1393596620}
     - target: {fileID: 4780116304775977826, guid: 20ba440f45df5884a9d45189852849cc, type: 3}
       propertyPath: sentances.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4780116304775977826, guid: 20ba440f45df5884a9d45189852849cc, type: 3}
+      propertyPath: sentances2.Array.size
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4780116304775977826, guid: 20ba440f45df5884a9d45189852849cc, type: 3}
@@ -22247,6 +22259,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4780116304775977826, guid: 20ba440f45df5884a9d45189852849cc, type: 3}
       propertyPath: sentances.Array.data[2]
+      value: ... Then I would certinally be out of your way, Ho Hoo
+      objectReference: {fileID: 0}
+    - target: {fileID: 4780116304775977826, guid: 20ba440f45df5884a9d45189852849cc, type: 3}
+      propertyPath: sentances2.Array.data[0]
+      value: Hoo, I'm not moving, no sir
+      objectReference: {fileID: 0}
+    - target: {fileID: 4780116304775977826, guid: 20ba440f45df5884a9d45189852849cc, type: 3}
+      propertyPath: sentances2.Array.data[1]
+      value: Well, maybe if I had a Gem I could vanish into the ether...
+      objectReference: {fileID: 0}
+    - target: {fileID: 4780116304775977826, guid: 20ba440f45df5884a9d45189852849cc, type: 3}
+      propertyPath: sentances2.Array.data[2]
       value: ... Then I would certinally be out of your way, Ho Hoo
       objectReference: {fileID: 0}
     - target: {fileID: 4780116304775977836, guid: 20ba440f45df5884a9d45189852849cc, type: 3}
@@ -23239,12 +23263,24 @@ PrefabInstance:
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4780116304775977826, guid: 20ba440f45df5884a9d45189852849cc, type: 3}
+      propertyPath: itemManager
+      value: 
+      objectReference: {fileID: 1393596621}
+    - target: {fileID: 4780116304775977826, guid: 20ba440f45df5884a9d45189852849cc, type: 3}
+      propertyPath: RequirementNum
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 4780116304775977826, guid: 20ba440f45df5884a9d45189852849cc, type: 3}
       propertyPath: dialogeManager
       value: 
       objectReference: {fileID: 1393596620}
     - target: {fileID: 4780116304775977826, guid: 20ba440f45df5884a9d45189852849cc, type: 3}
       propertyPath: sentances.Array.size
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4780116304775977826, guid: 20ba440f45df5884a9d45189852849cc, type: 3}
+      propertyPath: sentances2.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4780116304775977826, guid: 20ba440f45df5884a9d45189852849cc, type: 3}
       propertyPath: sentances.Array.data[0]
@@ -23256,6 +23292,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4780116304775977826, guid: 20ba440f45df5884a9d45189852849cc, type: 3}
       propertyPath: sentances.Array.data[2]
+      value: The garden gnome has first pick on leaving, but once he's gone I can
+        start to help you
+      objectReference: {fileID: 0}
+    - target: {fileID: 4780116304775977826, guid: 20ba440f45df5884a9d45189852849cc, type: 3}
+      propertyPath: sentances2.Array.data[0]
       value: The garden gnome has first pick on leaving, but once he's gone I can
         start to help you
       objectReference: {fileID: 0}
@@ -24419,6 +24460,7 @@ MonoBehaviour:
   dialogueText: {fileID: 1645679420}
   player: {fileID: 1393596614}
   animator: {fileID: 729391844}
+  itemManager: {fileID: 0}
 --- !u!114 &1393596621
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25445,12 +25487,24 @@ PrefabInstance:
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4780116304775977826, guid: 20ba440f45df5884a9d45189852849cc, type: 3}
+      propertyPath: itemManager
+      value: 
+      objectReference: {fileID: 1393596621}
+    - target: {fileID: 4780116304775977826, guid: 20ba440f45df5884a9d45189852849cc, type: 3}
+      propertyPath: RequirementNum
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 4780116304775977826, guid: 20ba440f45df5884a9d45189852849cc, type: 3}
       propertyPath: dialogeManager
       value: 
       objectReference: {fileID: 1393596620}
     - target: {fileID: 4780116304775977826, guid: 20ba440f45df5884a9d45189852849cc, type: 3}
       propertyPath: sentances.Array.size
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4780116304775977826, guid: 20ba440f45df5884a9d45189852849cc, type: 3}
+      propertyPath: sentances2.Array.size
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4780116304775977826, guid: 20ba440f45df5884a9d45189852849cc, type: 3}
       propertyPath: sentances.Array.data[0]
@@ -25467,6 +25521,14 @@ PrefabInstance:
     - target: {fileID: 4780116304775977826, guid: 20ba440f45df5884a9d45189852849cc, type: 3}
       propertyPath: sentances.Array.data[3]
       value: Huh? why, something like that would cost 5 Gold Coins
+      objectReference: {fileID: 0}
+    - target: {fileID: 4780116304775977826, guid: 20ba440f45df5884a9d45189852849cc, type: 3}
+      propertyPath: sentances2.Array.data[0]
+      value: I wish I had 5 gold coins so I could move to the big city...
+      objectReference: {fileID: 0}
+    - target: {fileID: 4780116304775977826, guid: 20ba440f45df5884a9d45189852849cc, type: 3}
+      propertyPath: sentances2.Array.data[1]
+      value: ... You wouldn't happen to have any? would you?
       objectReference: {fileID: 0}
     - target: {fileID: 4780116304775977836, guid: 20ba440f45df5884a9d45189852849cc, type: 3}
       propertyPath: m_RootOrder
@@ -63737,6 +63799,14 @@ PrefabInstance:
     - target: {fileID: 4780116304775977826, guid: 20ba440f45df5884a9d45189852849cc, type: 3}
       propertyPath: interType
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4780116304775977826, guid: 20ba440f45df5884a9d45189852849cc, type: 3}
+      propertyPath: itemManager
+      value: 
+      objectReference: {fileID: 1393596621}
+    - target: {fileID: 4780116304775977826, guid: 20ba440f45df5884a9d45189852849cc, type: 3}
+      propertyPath: RequirementNum
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4780116304775977826, guid: 20ba440f45df5884a9d45189852849cc, type: 3}
       propertyPath: dialogeManager

@@ -7,7 +7,12 @@ public class InteractionObject : MonoBehaviour
 {
     public DialogeManager dialogeManager;
     public ItemManager itemManager;
-
+    public enum QuestRequirmentType
+    {
+        coin,
+        gem,
+        questNum
+    }
     public enum  InteractableType
     {
         nothing,
@@ -16,6 +21,13 @@ public class InteractionObject : MonoBehaviour
         pickupGem,
         dialoge
     }
+
+    [Header("Quest Requirements")]
+    public QuestRequirmentType questRequirment;
+    public int RequirementNum;
+    public int currentNum;
+    public bool isCompleted;
+
     [Header("Type of Interactable")]
     public InteractableType interType;
 
@@ -26,20 +38,39 @@ public class InteractionObject : MonoBehaviour
     [Header("Dialogue Messages")]
     public string dialogueName;
     [TextArea]
-
     public string[] sentances;
+    [TextArea]
     public string[] sentances2;
-
-    [Header("Quest Requirements")]
-    public int coinRequirement;
-    public int gemReqirement;
-    public int questNumber;
-
+    [TextArea]
+    public string[] sentances3;
 
 
     public void Start()
     {
         infoText = GameObject.Find("InfoText").GetComponent<Text>();
+
+        isCompleted = false;
+        if (questRequirment == QuestRequirmentType.coin)
+        {
+            currentNum = itemManager.coinCount;
+        }
+        else if (questRequirment == QuestRequirmentType.gem)
+        {
+            currentNum = itemManager.gemCount;
+        }
+        else if (questRequirment == QuestRequirmentType.questNum)
+        {
+            currentNum = itemManager.completedQuests;
+        }
+    }
+
+    public void Update()
+    {
+        if (RequirementNum <= currentNum)
+        {
+           // Debug.Log("Ladies and gentlement, we got 'em");
+           // isCompleted = true;
+        }
     }
 
     public void Nothing()
@@ -57,7 +88,7 @@ public class InteractionObject : MonoBehaviour
     }
     public void Dialouge()
     {
-        dialogeManager.StartDialogue(sentances, sentances2);
+        dialogeManager.StartDialogue(sentances, sentances2, sentances3);
     }
 
     IEnumerator ShowInfo(string infoMessage, float waitTime)

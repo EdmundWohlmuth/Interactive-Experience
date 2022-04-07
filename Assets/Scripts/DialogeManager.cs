@@ -9,6 +9,7 @@ public class DialogeManager : MonoBehaviour
     public Text dialogueText;
     public GameObject player;
     public Animator animator;
+    public ItemManager itemManager;
 
     private Queue<string> dialogue;
     bool spokenToo;
@@ -20,7 +21,7 @@ public class DialogeManager : MonoBehaviour
         spokenToo = false;
     }
 
-    public void StartDialogue(string[] sentances, string[] sentances2)
+    public void StartDialogue(string[] sentances, string[] sentances2, string[] sentances3)
     {
         dialogue.Clear();
         dialogueUi.SetActive(true);
