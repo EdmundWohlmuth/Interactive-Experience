@@ -176,13 +176,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogeManager: {fileID: 0}
   itemManager: {fileID: 0}
+  questRequirment: 0
+  RequirementNum: 90
+  currentNum: 0
+  isCompleted: 0
   interType: 3
   infoMessage: 
   dialogueName: 
-  objectiveCount: 0
-  completedObj: 0
   sentances: []
   sentances2: []
+  sentances3: []
 --- !u!58 &7152495704702125074
 CircleCollider2D:
   m_ObjectHideFlags: 0

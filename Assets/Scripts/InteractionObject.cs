@@ -50,6 +50,11 @@ public class InteractionObject : MonoBehaviour
         infoText = GameObject.Find("InfoText").GetComponent<Text>();
 
         isCompleted = false;
+    }
+
+    public void Update()
+    {
+        // keep required item updated
         if (questRequirment == QuestRequirmentType.coin)
         {
             currentNum = itemManager.coinCount;
@@ -62,14 +67,12 @@ public class InteractionObject : MonoBehaviour
         {
             currentNum = itemManager.completedQuests;
         }
-    }
 
-    public void Update()
-    {
-        if (RequirementNum <= currentNum)
+        // establish if isCompleted is true
+        if (currentNum >= RequirementNum)
         {
-           // Debug.Log("Ladies and gentlement, we got 'em");
-           // isCompleted = true;
+            Debug.Log("Gottem");
+            isCompleted = true;
         }
     }
 

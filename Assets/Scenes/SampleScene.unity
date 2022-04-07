@@ -287,6 +287,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coin (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 3196360463791931261, guid: 6537042dfcfba924eac8cb6d4bc187fa, type: 3}
+      propertyPath: itemManager
+      value: 
+      objectReference: {fileID: 1393596621}
     m_RemovedComponents:
     - {fileID: 1012317712099545457, guid: 6537042dfcfba924eac8cb6d4bc187fa, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 6537042dfcfba924eac8cb6d4bc187fa, type: 3}
@@ -21504,6 +21508,10 @@ PrefabInstance:
       propertyPath: infoMessage
       value: Go left for Gnomous P. Gnome
       objectReference: {fileID: 0}
+    - target: {fileID: 4470123023231294912, guid: ed9f697f6f2530a4c9a388508f8d2908, type: 3}
+      propertyPath: itemManager
+      value: 
+      objectReference: {fileID: 1393596621}
     - target: {fileID: 4470123023231294914, guid: ed9f697f6f2530a4c9a388508f8d2908, type: 3}
       propertyPath: m_SortingOrder
       value: 2
@@ -21922,6 +21930,10 @@ PrefabInstance:
       propertyPath: infoMessage
       value: Gnomous P. Gnome (Gnomous P. Gnome)
       objectReference: {fileID: 0}
+    - target: {fileID: 4470123023231294912, guid: ed9f697f6f2530a4c9a388508f8d2908, type: 3}
+      propertyPath: itemManager
+      value: 
+      objectReference: {fileID: 1393596621}
     - target: {fileID: 4470123023231294914, guid: ed9f697f6f2530a4c9a388508f8d2908, type: 3}
       propertyPath: m_SortingOrder
       value: 2
@@ -22546,6 +22558,10 @@ PrefabInstance:
       propertyPath: infoMessage
       value: All Gnomes get thier power from gems
       objectReference: {fileID: 0}
+    - target: {fileID: 4470123023231294912, guid: ed9f697f6f2530a4c9a388508f8d2908, type: 3}
+      propertyPath: itemManager
+      value: 
+      objectReference: {fileID: 1393596621}
     - target: {fileID: 4470123023231294914, guid: ed9f697f6f2530a4c9a388508f8d2908, type: 3}
       propertyPath: m_SortingOrder
       value: 2
@@ -23083,6 +23099,10 @@ PrefabInstance:
       propertyPath: infoMessage
       value: A hedge mase, how novel
       objectReference: {fileID: 0}
+    - target: {fileID: 4470123023231294912, guid: ed9f697f6f2530a4c9a388508f8d2908, type: 3}
+      propertyPath: itemManager
+      value: 
+      objectReference: {fileID: 1393596621}
     - target: {fileID: 4470123023231294914, guid: ed9f697f6f2530a4c9a388508f8d2908, type: 3}
       propertyPath: m_SortingOrder
       value: 2
@@ -23628,6 +23648,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coin (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 3196360463791931261, guid: 6537042dfcfba924eac8cb6d4bc187fa, type: 3}
+      propertyPath: itemManager
+      value: 
+      objectReference: {fileID: 1393596621}
     m_RemovedComponents:
     - {fileID: 1012317712099545457, guid: 6537042dfcfba924eac8cb6d4bc187fa, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 6537042dfcfba924eac8cb6d4bc187fa, type: 3}
@@ -23806,6 +23830,10 @@ PrefabInstance:
       propertyPath: infoMessage
       value: See Gnomous P. Gnome before leaving
       objectReference: {fileID: 0}
+    - target: {fileID: 4470123023231294912, guid: ed9f697f6f2530a4c9a388508f8d2908, type: 3}
+      propertyPath: itemManager
+      value: 
+      objectReference: {fileID: 1393596621}
     - target: {fileID: 4470123023231294914, guid: ed9f697f6f2530a4c9a388508f8d2908, type: 3}
       propertyPath: m_SortingOrder
       value: 2
@@ -23876,6 +23904,10 @@ PrefabInstance:
       propertyPath: infoMessage
       value: ... but inflation is through the roof
       objectReference: {fileID: 0}
+    - target: {fileID: 4470123023231294912, guid: ed9f697f6f2530a4c9a388508f8d2908, type: 3}
+      propertyPath: itemManager
+      value: 
+      objectReference: {fileID: 1393596621}
     - target: {fileID: 4470123023231294914, guid: ed9f697f6f2530a4c9a388508f8d2908, type: 3}
       propertyPath: m_SortingOrder
       value: 2
@@ -24103,6 +24135,14 @@ PrefabInstance:
     - target: {fileID: 2293349409630800481, guid: 6537042dfcfba924eac8cb6d4bc187fa, type: 3}
       propertyPath: m_Name
       value: Coin
+      objectReference: {fileID: 0}
+    - target: {fileID: 3196360463791931261, guid: 6537042dfcfba924eac8cb6d4bc187fa, type: 3}
+      propertyPath: itemManager
+      value: 
+      objectReference: {fileID: 1393596621}
+    - target: {fileID: 3196360463791931261, guid: 6537042dfcfba924eac8cb6d4bc187fa, type: 3}
+      propertyPath: RequirementNum
+      value: 90
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1012317712099545457, guid: 6537042dfcfba924eac8cb6d4bc187fa, type: 3}
@@ -24639,6 +24679,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coin (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3196360463791931261, guid: 6537042dfcfba924eac8cb6d4bc187fa, type: 3}
+      propertyPath: itemManager
+      value: 
+      objectReference: {fileID: 1393596621}
     m_RemovedComponents:
     - {fileID: 1012317712099545457, guid: 6537042dfcfba924eac8cb6d4bc187fa, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 6537042dfcfba924eac8cb6d4bc187fa, type: 3}
@@ -24757,6 +24801,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coin (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 3196360463791931261, guid: 6537042dfcfba924eac8cb6d4bc187fa, type: 3}
+      propertyPath: itemManager
+      value: 
+      objectReference: {fileID: 1393596621}
     m_RemovedComponents:
     - {fileID: 1012317712099545457, guid: 6537042dfcfba924eac8cb6d4bc187fa, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 6537042dfcfba924eac8cb6d4bc187fa, type: 3}
@@ -25416,6 +25464,10 @@ PrefabInstance:
       propertyPath: infoMessage
       value: Exit to the "Remebered Relams"
       objectReference: {fileID: 0}
+    - target: {fileID: 4470123023231294912, guid: ed9f697f6f2530a4c9a388508f8d2908, type: 3}
+      propertyPath: itemManager
+      value: 
+      objectReference: {fileID: 1393596621}
     - target: {fileID: 4470123023231294914, guid: ed9f697f6f2530a4c9a388508f8d2908, type: 3}
       propertyPath: m_SortingOrder
       value: 2
@@ -25601,6 +25653,10 @@ PrefabInstance:
       propertyPath: infoMessage
       value: Do not step on crops, we need this harvest
       objectReference: {fileID: 0}
+    - target: {fileID: 4470123023231294912, guid: ed9f697f6f2530a4c9a388508f8d2908, type: 3}
+      propertyPath: itemManager
+      value: 
+      objectReference: {fileID: 1393596621}
     - target: {fileID: 4470123023231294914, guid: ed9f697f6f2530a4c9a388508f8d2908, type: 3}
       propertyPath: m_SortingOrder
       value: 2
@@ -63490,6 +63546,10 @@ PrefabInstance:
       propertyPath: infoMessage
       value: Coins are a form of legal tender...
       objectReference: {fileID: 0}
+    - target: {fileID: 4470123023231294912, guid: ed9f697f6f2530a4c9a388508f8d2908, type: 3}
+      propertyPath: itemManager
+      value: 
+      objectReference: {fileID: 1393596621}
     - target: {fileID: 4470123023231294914, guid: ed9f697f6f2530a4c9a388508f8d2908, type: 3}
       propertyPath: m_SortingOrder
       value: 2
@@ -63735,6 +63795,10 @@ PrefabInstance:
       propertyPath: infoMessage
       value: Totally a Gnome's house
       objectReference: {fileID: 0}
+    - target: {fileID: 4470123023231294912, guid: ed9f697f6f2530a4c9a388508f8d2908, type: 3}
+      propertyPath: itemManager
+      value: 
+      objectReference: {fileID: 1393596621}
     - target: {fileID: 4470123023231294914, guid: ed9f697f6f2530a4c9a388508f8d2908, type: 3}
       propertyPath: m_SortingOrder
       value: 2
@@ -63885,6 +63949,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 807503131}
     m_Modifications:
+    - target: {fileID: 7152495704702125073, guid: b45caefc21c1b7b4b9151f3348cdeeb2, type: 3}
+      propertyPath: itemManager
+      value: 
+      objectReference: {fileID: 1393596621}
     - target: {fileID: 7152495704702125086, guid: b45caefc21c1b7b4b9151f3348cdeeb2, type: 3}
       propertyPath: m_RootOrder
       value: 0
