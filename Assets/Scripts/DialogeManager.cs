@@ -21,7 +21,7 @@ public class DialogeManager : MonoBehaviour
         spokenToo = false;
     }
 
-    public void StartDialogue(string[] sentances, string[] sentances2, string[] sentances3)
+    public void StartDialogue(string[] sentances, string[] sentances2, string[] sentances3, bool isCompleted)
     {
         dialogue.Clear();
         dialogueUi.SetActive(true);
@@ -39,6 +39,13 @@ public class DialogeManager : MonoBehaviour
                 dialogue.Enqueue(currentLine);
                 spokenToo = true;
             }           
+        }
+        else if (isCompleted)
+        {
+            foreach (var currentLine in sentances3)
+            {
+                dialogue.Enqueue(currentLine);
+            }
         }
         else if (spokenToo)
         {

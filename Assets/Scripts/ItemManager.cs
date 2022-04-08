@@ -5,8 +5,6 @@ using UnityEngine.UI;
 
 public class ItemManager : MonoBehaviour
 {
-    public Text coinText;
-    public Text gemText;
     public Text questText;
 
     public int coinCount;
@@ -23,9 +21,7 @@ public class ItemManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // update coin display
-        coinText.text = "Coins: " + coinCount;
-        gemText.text = "Gems: " + gemCount;
+        // update display
         questText.text = completedQuests + "/5 Quests";
     }
 }

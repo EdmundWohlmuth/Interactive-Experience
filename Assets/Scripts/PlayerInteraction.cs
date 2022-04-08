@@ -53,6 +53,12 @@ public class PlayerInteraction : MonoBehaviour
             currentInterObj = collision.gameObject;
             currentInteractObjScript = currentInterObj.GetComponent<InteractionObject>();
         }
+
+        if (collision.CompareTag("InterObject") == true && currentInteractObjScript.isCompleted == true)
+        {
+            currentInteractObjScript.ObjectiveItem();
+            currentInteractObjScript.isCompleted = false;
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)

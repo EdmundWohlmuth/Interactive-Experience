@@ -7,6 +7,7 @@ public class InteractionObject : MonoBehaviour
 {
     public DialogeManager dialogeManager;
     public ItemManager itemManager;
+    public GameObject objectiveItem;
     public enum QuestRequirmentType
     {
         coin,
@@ -27,6 +28,7 @@ public class InteractionObject : MonoBehaviour
     public int RequirementNum;
     public int currentNum;
     public bool isCompleted;
+    public bool isActive;
 
     [Header("Type of Interactable")]
     public InteractableType interType;
@@ -71,7 +73,7 @@ public class InteractionObject : MonoBehaviour
         // establish if isCompleted is true
         if (currentNum >= RequirementNum)
         {
-            Debug.Log("Gottem");
+           // Debug.Log("Gottem");
             isCompleted = true;
         }
     }
@@ -91,7 +93,7 @@ public class InteractionObject : MonoBehaviour
     }
     public void Dialouge()
     {
-        dialogeManager.StartDialogue(sentances, sentances2, sentances3);
+        dialogeManager.StartDialogue(sentances, sentances2, sentances3, isCompleted);
     }
 
     IEnumerator ShowInfo(string infoMessage, float waitTime)
@@ -100,5 +102,24 @@ public class InteractionObject : MonoBehaviour
         yield return new WaitForSeconds(waitTime);
         infoText.text = null;
         
+    }
+
+    // removing coins / spawning/despawning items
+    public void ObjectiveItem()
+    {
+        //currentNum = currentNum - RequirementNum;
+
+        dialogeManager.StartDialogue(sentances, sentances2, sentances3, isCompleted);
+        if (objectiveItem.active == false)
+        {
+            objectiveItem.active = true;
+            isActive = true;
+        }
+        else if (objectiveItem.active == true && isActive == false)
+        {
+            objectiveItem.active = false;
+        }
+        gameObject.GetComponent<Collider2D>().enabled = false;
+        itemManager.completedQuests++;
     }
 }
